@@ -3,7 +3,7 @@
 
 # checkmenuitem.py
 
-import wx
+import wx, os.path
 
 ID_STAT = 1
 ID_TOOL = 2
@@ -25,7 +25,7 @@ class CheckMenuItem(wx.Frame):
         self.SetMenuBar(menubar)
 
         self.toolbar = self.CreateToolBar()
-        self.toolbar.AddLabelTool(3, '', wx.Bitmap('icons/quit.png'))
+        self.toolbar.AddLabelTool(3, '', wx.Bitmap(os.path.join(os.path.dirname(__file__), 'icons/quit.png')))
         self.toolbar.Realize()
 
         self.statusbar = self.CreateStatusBar()
