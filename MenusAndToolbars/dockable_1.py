@@ -12,7 +12,8 @@ class Dockable(wx.Frame):
 
         menubar = wx.MenuBar(wx.MB_DOCKABLE)
         keys = [['file', '&File'], ['edit', '&Edit'], ['view', '&View'], \
-                ['insr', '&Insert'], ['form', '&Format'], ['tool', '&Tools'], ['help', '&Help']]
+                ['insr', '&Insert'], ['form', '&Format'], ['tool', '&Tools'], \
+                ['help', '&Help']]
         for key in keys:
             d[key[0]] = wx.Menu()
             menubar.Append(d[key[0]], key[1])
