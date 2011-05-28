@@ -16,12 +16,12 @@ class ComboBox(wx.Dialog):
                        'galsworthy.jpg', 'wolfe.jpg', 'zweig.jpg', 'konatsu.jpg', \
                        'meguru.jpg', 'miku.jpg', 'nao.jpg', 'rei.jpg', \
                        'rumi.jpg', 'saori.jpg', 'yui.jpg', 'chiaki.jpg']
-        authors = ['Leo Tolstoy', 'Lion Feuchtwanger', 'Honore de Balzac', 'Boris Pasternak', \
-                   'John Galsworthy', 'Tom Wolfe', 'Stefan Zweig', u'黒川小夏', \
-                   u'小坂めぐる', u'初音ミク', u'及川奈央', u'檸衣', \
-                   u'白崎るみ', u'深海沙織', u'波多野結衣', u'小菅千晶']
+        people = ['Leo Tolstoy', 'Lion Feuchtwanger', 'Honore de Balzac', 'Boris Pasternak', \
+                  'John Galsworthy', 'Tom Wolfe', 'Stefan Zweig', u'黒川小夏', \
+                  u'小坂めぐる', u'初音ミク', u'及川奈央', u'檸衣', \
+                  u'白崎るみ', u'深海沙織', u'波多野結衣', u'小菅千晶']
 
-        wx.ComboBox(self, -1, pos = (50, 170), size = (150, -1), choices = authors, \
+        wx.ComboBox(self, -1, pos = (50, 170), size = (150, -1), choices = people, \
                     style = wx.CB_READONLY)
         wx.Button(self, 1, 'Close', (80, 220))
 
